@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+}
+body{
+    height: 100vh;
+    background: hsl(0, 0%, 8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+}
+
+#container{
+width: 200px;
+height: 350px;
+padding: 50px;
+background: hsl(0, 0%, 12%);
+display: flex;
+flex-direction:column;
+align-items: center;
+border-radius: 15px;
+
+}
+
+img{
+ width: 60px;
+ border-radius: 50%;
+}
