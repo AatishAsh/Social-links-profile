@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    box-sizing: border-box;
 }
 body{
     height: 100vh;
@@ -9,22 +10,23 @@ body{
     align-items: center;
     color: hsl(0, 0%, 100%);
     font-family: "inter",sans-serif;
+    height: 100vh
 }
 
 #container{
-width: 200px;
-height: 350px;
+width: 300px;
+height: 450px;
 padding: 30px;
 background: hsl(0, 0%, 12%);
 display: flex;
 flex-direction:column;
 align-items: center;
-border-radius: 15px;
+border-radius: 10px;
 
 }
 
 img{
- width: 60px;
+ width: 80px;
  border-radius: 50%;
  padding: 10px;
 }
@@ -36,18 +38,19 @@ img{
 }
 
 h1{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 400;
 }
 h2{
     color: hsl(75, 94%, 57%);
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 400;
 }
 
 P{
     font-size: 10px;
     padding: 10px 0px;
+    font-weight: 300;
 }
 
 #linkcon{
@@ -59,10 +62,22 @@ P{
 }
 
 .links{
-    
+    display: flex;
+    justify-content: center;
     background-color: hsl(0, 0%, 20%);
     padding: 10px 30px;
-    border-radius: 10px;
-    width: 100%;
+    border-radius: 5px;
+    width: 250px;
+    margin: 5px;
+    transition: all 0.5 ease;
+}
+a{
+    text-decoration: none;
+    font-style: normal;
+    color: inherit;
+}
+
+.links:hover{
+    transform: scale(1.1);
 
 }
